@@ -1,18 +1,14 @@
 import React, { useContext, useEffect } from "react";
 import { StyledArticle } from "../../styles/components/MenuItem";
 import { AppContext } from "../../context/Appcontext";
-import { state,toogleInformation,setToogleInformation,addToCharacterById,viewCharacter} from '../../hooks/useGetCharacters';
+import { setToogleInformation,addToCharacterById} from '../../hooks/useGetCharacters';
 
 const MenuItem = ({character}) =>{
-    const {toogleInformation,setToogleInformation,addToCharacterById,viewCharacter,state}=useContext(AppContext);
+    const {setToogleInformation,addToCharacterById}=useContext(AppContext);
     const handleClick = (person) => {
         addToCharacterById(character);
         setToogleInformation(true);
     }
-    useEffect(() => {
-
-            addToCharacterById(state.characters[0]);
-        },[character])
     return(
         <StyledArticle>
 

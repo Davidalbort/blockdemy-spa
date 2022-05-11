@@ -40,9 +40,7 @@ const FindPerson = ({totalId}) =>{
     useEffect(()=>{
         addToCharacter(characters);
         addToCharacterById(characters);
-        
     },[characters]);
-    console.log(viewCharacter,'loading',loading);
     return(
         <StyledMain>
             {viewCharacter.id && <CharacterItem character={viewCharacter}/>}

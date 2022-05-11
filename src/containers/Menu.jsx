@@ -11,7 +11,7 @@ const Menu = () => {
         if(!toogleInformation){
             addToCharacterById(state.characters[0]);
         }
-    },[state])
+    },[state]);
     return(
         <StyledAside>
             <h1>History</h1>

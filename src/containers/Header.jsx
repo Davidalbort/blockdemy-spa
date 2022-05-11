@@ -5,7 +5,6 @@ import { Menu } from './Menu';
 const Header = () =>{
     const href= 'https://www.blockdemy.com/';
     const [toogleHistory, setToogleHistory]= useState(false);
-    console.log(toogleHistory);
     return(
         <StyledHeader>
 
@@ -14,9 +13,6 @@ const Header = () =>{
             </a>
 
             <nav>
-                {/* <a onClick={()=> setToogleHistory(!toogleHistory)}>
-                    Menu
-                </a> */}
                 <input id='menu'type="radio" name='menu'/>
                 <label  htmlFor='menu' onClick={()=> setToogleHistory(!toogleHistory)}>
                     Menu
