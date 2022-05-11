@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
     color: white;
     background-color: ${colors.primary_black};
     font-size: clamp(1.0rem,2.5vw,1.6rem);
-    width: clamp(36rem,100%,128rem);
+    width: clamp(36rem,100%,140rem);
     a{
         text-decoration: none;
         color: white;
